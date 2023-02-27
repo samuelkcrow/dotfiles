@@ -1,0 +1,29 @@
+$include /etc/inputrc
+
+# display possible completions with file type colors
+set colored-stats on
+
+# append character to completions according to file type
+set visible-stats on
+
+# autocomplete ignores case
+set completion-ignore-case on
+
+# shorten common prefix of autocompletes to ... if >3 chars
+set completion-prefix-display-length 3
+
+# every completion which is a symbolic link to a directory will have a slash appended
+set mark-symlinked-directories on
+
+# show completion list immediately unless partial completion is possible
+set show-all-if-unmodified on
+
+# show which vi mode prompt is in
+set show-mode-in-prompt on
+
+# use vi bindings
+set editing-mode vi
+
+# set cursor to blinking underline for ins and blinking block for cmd
+set vi-ins-mode-string "\1\e[3 q\2"
+set vi-cmd-mode-string "\1\e[1 q\2"
